@@ -84,7 +84,10 @@ public class ChatController {
     }
 
     private void displayResponseUser(String response) {
-        chatArea.appendText("You: " + response + "\n");
+        if (!response.isEmpty()) {
+            chatArea.appendText("You: " + response + "\n");
+        }
+
     }
 
 
